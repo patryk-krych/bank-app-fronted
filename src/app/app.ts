@@ -10,10 +10,5 @@ import { RouterOutlet } from '@angular/router';
 })
 
 export class App {
-  // isLogged = false;
-
-
-  // onUserLoggedIn(isLoggedIn: boolean) {
-  //   this.isLogged = isLoggedIn;
-  // }
+  
 }

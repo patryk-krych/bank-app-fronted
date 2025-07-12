@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #9c27b0, #e91e63); /* fiolet-róż */
+  background: linear-gradient(135deg, #9c27b0, #e91e63); 
   padding: 40px 40px;
   color: #fefefe;
   border-radius: 30px;
@@ -35,7 +35,7 @@
 }
 
 .logout-button {
-  background: linear-gradient(135deg, #9c27b0, #0711a7); /* fiolet-niebieski */
+  background: linear-gradient(135deg, #9c27b0, #0711a7); 
   color: white;
   border: none;
   padding: 8px 16px;
@@ -47,5 +47,5 @@
 }
 
 .logout-button:hover {
-  background: linear-gradient(135deg, #7b1fa2, #00108a); /* ciemniejszy fiolet-niebieski */
+  background: linear-gradient(135deg, #7b1fa2, #00108a); 
 }
