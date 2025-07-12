@@ -8,7 +8,7 @@ The backend is built with Spring Boot ☕
 
 🚧 The application is not finished
 
-✅ Implemented functions:
+✅ Currently implemented functions:
 - 🔑 **User login** with JWT authentication  
 - 💾 **Storing token** in local storage  
 - 📬 **Fetching user profile** from backend after login  
