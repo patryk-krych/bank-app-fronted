@@ -1,18 +1,41 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService, UserDTO } from '../../services/auth.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
-  imports: [],
   templateUrl: './header.html',
-  styleUrl: './header.css'
+  styleUrls: ['./header.css']
 })
-export class Header {
+export class Header implements OnInit, OnDestroy {
   private router = inject(Router);
+  private authService = inject(AuthService);
 
-  logout() {
-    localStorage.removeItem('jwtToken');
-    this.router.navigate(['/login']);
+  user: UserDTO | null = null;
+  private userSub?: Subscription;
+  private fetchUserSub?: Subscription;
+
+  ngOnInit() {
+    this.userSub = this.authService.user$.subscribe(user => {
+      this.user = user;
+    });
+
+    if (this.authService.getToken()) {
+      // zapisujemy subskrypcję, by móc ją później odsubskrybować
+      this.fetchUserSub = this.authService.fetchCurrentUser().subscribe({
+        error: () => this.authService.clearToken() // np. wyczyść token jeśli fetch nieudany
+      });
+    }
   }
 
+  ngOnDestroy() {
+    this.userSub?.unsubscribe();
+    this.fetchUserSub?.unsubscribe();
+  }
+
+  logout() {
+    this.authService.clearToken();
+    this.router.navigate(['/login']);
+  }
 }
