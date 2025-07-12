@@ -22,9 +22,9 @@ export class Header implements OnInit, OnDestroy {
     });
 
     if (this.authService.getToken()) {
-      // zapisujemy subskrypcję, by móc ją później odsubskrybować
+
       this.fetchUserSub = this.authService.fetchCurrentUser().subscribe({
-        error: () => this.authService.clearToken() // np. wyczyść token jeśli fetch nieudany
+        error: () => this.authService.clearToken() 
       });
     }
   }
