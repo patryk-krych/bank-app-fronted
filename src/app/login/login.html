@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit()" class="login-form">
+  <h2>Zaloguj się</h2>
+
+  <label for="userId">ID użytkownika</label>
+  <input
+    type="text"
+    id="userId"
+    name="userId"
+    [(ngModel)]="userId"
+    required
+    placeholder="Wpisz ID"
+  />
+
+  <label for="password">Hasło</label>
+  <input
+    type="password"
+    id="password"
+    name="password"
+    [(ngModel)]="password"
+    required
+    placeholder="Wpisz hasło"
+  />
+
+  <button type="submit">Zaloguj</button>
+
+</form>

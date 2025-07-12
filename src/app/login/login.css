@@ -1,0 +1,59 @@
+.login-form {
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, #9c27b0, #e91e63);
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: sans-serif, Helvetica;
+  color: #fefefe;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fefefe;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #fefefe;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #9c27b0, #0711a7);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background: linear-gradient(135deg, #7b1fa2, #00108a);
+}
