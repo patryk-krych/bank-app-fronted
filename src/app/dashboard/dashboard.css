@@ -4,6 +4,7 @@
   gap: 60px;
   padding: 40px 60px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .dashboard-left {
