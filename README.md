@@ -13,6 +13,7 @@ The backend is built with Spring Boot ☕
 - 💾 **Storing token** in local storage  
 - 📬 **Fetching user profile** from backend after login  
 - 🧾 **Displaying user data** (ID, first name, last name) in the header
+- 🔐 **Route protection** – only authenticated users can access restricted routes (e.g. /home)
 
 
 ## 🚀 How to run the app locally
