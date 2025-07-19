@@ -1,0 +1,35 @@
+.account-container {
+  background: #f7f3fb;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  width: 100%;
+  max-width: 400px;
+}
+
+h3 {
+  color: #4a0072;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.account-field {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.account-number,
+.account-balance {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+  word-break: break-all;
+}
