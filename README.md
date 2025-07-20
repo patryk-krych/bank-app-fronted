@@ -30,4 +30,5 @@ The backend is built with Spring Boot ☕
 4. To login, use the following credentials:
 
    Id: 1
+   
    Hasło: test123
