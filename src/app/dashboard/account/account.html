@@ -1,13 +1,23 @@
-<div class="account-container">
+@if (account) {
+  <div class="account-container">
   <h3>Informacje o koncie</h3>
 
   <div class="account-field">
     <label>Numer konta:</label>
-    <p class="account-number">PL12 3456 7890 1234 5678 9012 3456</p>
+    <p class="account-number">{{ account.accountId }}</p>
   </div>
 
   <div class="account-field">
     <label>Saldo dostępne:</label>
-    <p class="account-balance">12 345,67 PLN</p>
+    <p class="account-balance">
+      {{ account.balance | number:'1.2-2' }} {{ account.currency }}
+    </p>
   </div>
 </div>
+}
+@else {
+  <div>
+  <p>Ładowanie danych konta...</p>
+  </div>
+}
+
