@@ -1,0 +1,27 @@
+<div class="register-container">
+  <h2>Rejestracja</h2>
+  <form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+    <div>
+      <label>Imię</label>
+      <input type="text" formControlName="firstName" required />
+    </div>
+    <div>
+      <label>Drugie imię</label>
+      <input type="text" formControlName="secondName" />
+    </div>
+    <div>
+      <label>Nazwisko</label>
+      <input type="text"  formControlName="lastName" required />
+    </div>
+    <div>
+      <label>Data urodzenia</label>
+      <input type="date" formControlName="birthday" required />
+    </div>
+    <div>
+      <label>Hasło</label>
+      <input type="password" formControlName="password" required />
+    </div>
+
+    <button type="submit" [disabled]="registerForm.invalid">Zarejestruj się</button>
+  </form>
+</div>
