@@ -18,7 +18,7 @@ export class Account implements OnInit{
   ngOnInit() {
     this.accountService.fetchAccounts().subscribe({
       next: (accounts) => {
-        this.account = accounts.length > 0 ? accounts[0] : null; // bierzemy pierwsze konto
+        this.account = accounts.length > 0 ? accounts[0] : null;
         this.loading = false;
       },
       error: (err) => {
