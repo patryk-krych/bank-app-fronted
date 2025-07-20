@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(135deg, #9c27b0, #e91e63); 
-  padding: 40px 40px;
+  padding: 20px 20px;
   color: #fefefe;
   border-radius: 30px;
   font-family: sans-serif, Helvetica;
@@ -48,4 +48,11 @@
 
 .logout-button:hover {
   background: linear-gradient(135deg, #7b1fa2, #00108a); 
+}
+
+.logo-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  vertical-align: middle;
 }

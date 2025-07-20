@@ -3,15 +3,15 @@
   <form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
     <div>
       <label>Imię</label>
-      <input type="text" formControlName="firstName" required />
+      <input type="text" formControlName="firstName" required placeholder="Twoje Imię" />
     </div>
     <div>
       <label>Drugie imię</label>
-      <input type="text" formControlName="secondName" />
+      <input type="text" formControlName="secondName" placeholder="Twoje Drugie Imię"/>
     </div>
     <div>
       <label>Nazwisko</label>
-      <input type="text"  formControlName="lastName" required />
+      <input type="text"  formControlName="lastName" required placeholder="Twoje Nazwisko"/>
     </div>
     <div>
       <label>Data urodzenia</label>
@@ -19,7 +19,7 @@
     </div>
     <div>
       <label>Hasło</label>
-      <input type="password" formControlName="password" required />
+      <input type="password" formControlName="password" required placeholder="Twoje Hasło"/>
     </div>
 
     <button type="submit" [disabled]="registerForm.invalid">Zarejestruj się</button>
