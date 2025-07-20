@@ -28,7 +28,5 @@ The backend is built with Spring Boot ☕
 3. Visit http://localhost:4200/
 
 4. To login, use the following credentials:
-
    Id: 1
-   
    Hasło: test123
