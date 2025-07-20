@@ -89,3 +89,10 @@
   outline: none;
   box-shadow: none;
 }
+
+.error-message {
+  margin-top: 12px;
+  color: rgb(204, 202, 202);
+  font-weight: 600;
+  text-align: center;
+}

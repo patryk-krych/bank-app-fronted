@@ -41,7 +41,7 @@ export class Login {
         });
       },
       error: () => {
-        this.errorMessage = 'Nieprawidłowy login lub hasło';
+        this.errorMessage = 'Nieprawidłowy login lub hasło! <br> Spróbuj ponownie';
       }
     });
   }

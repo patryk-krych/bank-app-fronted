@@ -23,6 +23,11 @@
 
   <button type="submit">Zaloguj</button>
 
+  @if (errorMessage) {
+    <div class="error-message" [innerHTML]="errorMessage"></div>
+  }
+
+
   <div class="register-link-container">
   <button type="button" class="register-btn" (click)="goToRegister()">Zarejestruj się</button>
   </div>
