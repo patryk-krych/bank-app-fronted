@@ -40,11 +40,19 @@ export class Login {
           }
         });
       },
-      error: () => {
-        this.errorMessage = 'Nieprawidłowy login lub hasło! <br> Spróbuj ponownie';
+       error: (err) => {
+      if (err.status === 0) {
+        this.errorMessage = 'Nie można połączyć się z serwerem. Sprawdź połączenie.';
+      } 
+      else if (err.status === 401 || err.status === 403) {
+        this.errorMessage = 'Nieprawidłowy login lub hasło! Spróbuj ponownie.';
+      } 
+      else {
+        this.errorMessage = 'Wystąpił nieoczekiwany błąd. Spróbuj ponownie później.';
       }
-    });
-  }
+    }
+  });
+}
 
   goToRegister() {
   this.router.navigate(['/register']);
